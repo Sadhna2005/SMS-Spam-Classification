@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC
 
-data = pd.read_csv("./SMSSpamCollection", sep='\t', header=None, names=['label','message'])
+data = pd.read_csv("smsspamclassification", sep='\t', header=None, names=['label','message'])
 
 data['label'] = data['label'].map({'ham':0,'spam':1})
 
