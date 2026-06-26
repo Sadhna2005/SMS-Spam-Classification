@@ -38,12 +38,14 @@ def clean_text(text):
 # -------------------------------
 # Load Dataset
 # -------------------------------
+
 data = pd.read_csv(
-    "SMSSpamCollection",
+    "smsspamclassification",
     sep="\t",
     header=None,
     names=["label", "message"]
 )
+
 
 data["label"] = data["label"].map({
     "ham": 0,
