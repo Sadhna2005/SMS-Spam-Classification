@@ -526,3 +526,16 @@ print(
 )
 
 
+#saving model training
+
+import pickle
+
+# Save TF-IDF Vectorizer
+with open("tfidf.pkl", "wb") as f:
+    pickle.dump(tfidf, f)
+
+# Save the best model
+with open("model.pkl", "wb") as f:
+    pickle.dump(svm, f)
+
+print("Model and Vectorizer saved successfully.")
