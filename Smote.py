@@ -38,8 +38,9 @@ nltk.download('wordnet')
 
 #Load Dataset
 
+
 df = pd.read_csv(
-    "SMSSpamCollection",
+    "smsspamclassification",
     sep="\t",
     names=["label","message"]
 )
